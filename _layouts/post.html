@@ -1,0 +1,9 @@
+<!-- =============================== storyboard =============================== -->
+     
+      <hr class="story-divider">
+      
+      <div class="story">
+        <img class="story-image <?php if ($isRight==TRUE){ echo "pull-right"; $isRight=FALSE;} else {echo "pull-left"; $isRight=TRUE;} ?> col-xs-12 col-md-6 col-lg-6" src="img/{{ page.image }}" alt="for every kid who has a dream">
+		<h2 class="story-heading">{{ page.title }} <span class="text-muted">Amidst the heat, dreams took flight.</span></h2>
+        <p class="lead"> {{ content }} </p>
+      </div>
