@@ -59,7 +59,7 @@ layout: default
           <h1>Engage.</h1>
           <a href="#engage2"><img class="img-circle img-responsive" src="img/motto-01.jpg"></a>
           <p>It's about making a child forget they're even in the hospital.</p> <!-- link to pumpkin story -->
-          <p><a class="btn btn-default" href="#engage1">Find Out How To Make A Child Smile &raquo;</a></p>
+          <p><a class="btn btn-default" href="#/2009/09/03/boo">Find Out How To Make A Child Smile &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <hr class="motto-divider">
         <div class="col-lg-4 col-sm-4">
@@ -83,7 +83,7 @@ layout: default
   
   {% for post in site.posts reversed %}
       
-      <hr class="story-divider">
+      <hr class="story-divider" id="{{ post.id }}">
       
       <div class="story">
         
@@ -108,42 +108,12 @@ layout: default
 			<span class="text-muted"> {{ post.sub }} </span>
 		</h2>
       
-     	<p class="lead"> {{ post.excerpt }} </p>
+     	<p class="lead"> {{ post.excerpt }}</p>
       </div>
 
   {% endfor %}
   
   <!-- end storyboards -->
-
-<!-- =============================== storyboard =============================== -->
-
-      <hr class="story-divider">
-
-      <div class="story">
-        <img class="story-image <?php if ($isRight==TRUE){ echo "pull-right"; $isRight=FALSE;} else {echo "pull-left"; $isRight=TRUE;} ?> col-xs-12 col-sm-5 col-lg-3" src="img/story-06.jpg" alt="dance marathon UH volunteer craft cart">
-        <h2 class="story-heading">Planes, trains, and automobiles. <span class="text-muted">Spreading the love in Rainbow.</span></h2>
-        <p class="lead">Ready to serve, the first group of volunteers is ready to distribute an assortment of diversionary activities to the kids in Rainbow babies and Children's Hospital.  Included herein, coloring books, wooden planes for painting, and toy cars. FTK!</p>
-      </div>
-
-<!-- =============================== storyboard =============================== -->
-
-      <hr class="story-divider">
-
-      <div class="story">
-        <img class="story-image <?php if ($isRight==TRUE){ echo "pull-right"; $isRight=FALSE;} else {echo "pull-left"; $isRight=TRUE;} ?> col-xs-12 col-md-6 col-lg-6" src="img/story-07.jpg" alt="dance marathon bake sale">
-        <h2 class="story-heading">Moving sweets. <span class="text-muted">Our first fundraiser.</span></h2>
-        <p class="lead">Never having thrown a fundraiser, we started small and perhaps cliche, we held a bake sale.  But have no misconceptions, bake sales are more work than they may seem.  The results? One person went to ER during food prep, one person baked for 7 hours, and over three days, we raised over $320 and delivered many smiles. FTK.</p>
-      </div>
-
-<!-- =============================== storyboard =============================== -->
-
-      <hr class="story-divider" id="engage1">
-
-      <div class="story">
-        <img class="story-image <?php if ($isRight==TRUE){ echo "pull-right"; $isRight=FALSE;} else {echo "pull-left"; $isRight=TRUE;} ?> col-xs-12 col-md-6 col-lg-6" src="img/story-08.jpg" alt="dance marathon UH pumpkin painting">
-        <h2 class="story-heading">Boo! <span class="text-muted">Pumpkin painting with the kids.</span></h2>
-        <p class="lead">In an effort to better engage the children in the hospital, we set out to bring in a little Halloween spirit through a pumpkin painting event.  Having no budget, the group acquired over 150 pumpkins through donations.  Unfortunately we found out the cancer patients couldn't participate due to the pumpkins possibly carrying infectious agents.  So we painted them with other patients and did a lot ourselves.  We distributed them on the non-oncology floors and brought smiles to many kids' faces!</p>
-      </div>
       
 <!-- =============================== storyboard =============================== -->
 
