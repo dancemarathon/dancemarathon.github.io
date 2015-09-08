@@ -290,7 +290,7 @@ nav.detached {
   right: 20%;
 }
 
-.carousel-control:focus, .carousel-control:active {
+.carousel-control:focus, .carousel-control:visited {
 	opacity: 0.5;
 }
 
