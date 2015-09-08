@@ -257,6 +257,29 @@ nav.detached {
 	background-color: #5b0099;
 }
 
+/* Fade transition for carousel items */
+.carousel .item {
+    left: 0 !important;
+      -webkit-transition: opacity 1s; /*adjust timing here */
+         -moz-transition: opacity 1s;
+           -o-transition: opacity 1s;
+              transition: opacity 1s;
+}
+.carousel-control {
+    background-image: none !important; /* remove background gradients on controls */
+}
+/* Fade controls with items */
+.next.left,
+.prev.right img {
+    opacity: 1;
+    z-index: 1;
+}
+.active.left,
+.active.right img {
+    opacity: 0;
+    z-index: 2;
+}
+
 /* MOTTO CONTENT
 -------------------------------------------------- */
 
