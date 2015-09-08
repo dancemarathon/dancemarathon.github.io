@@ -216,6 +216,18 @@ nav.detached {
   overflow: hidden;
 }
 
+#slide-01 {
+  margin-left: -140%;
+}
+
+#slide-02 {
+  margin-left: -75%;
+}
+
+#slide-03 {
+  margin-left: -75%;
+}
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
 	z-index: 10;
@@ -455,7 +467,6 @@ nav.detached {
 	}
 	
 	.carousel-inner > .item > img {
-
   		width: 100%;
 		height: auto;
 	}
@@ -466,6 +477,18 @@ nav.detached {
 	
 	.carousel-caption p {
 		margin-bottom: 10px;
+	}
+	
+	#slide-01 {
+	  margin-left: 0%;
+	}
+
+	#slide-02 {
+	  margin-left: 0%;
+	}
+
+	#slide-03 {
+	  margin-left: 0%;
 	}
 
 }
