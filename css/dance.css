@@ -290,6 +290,10 @@ nav.detached {
   right: 20%;
 }
 
+.carousel-control:focus {
+	opacity: 0.5;
+}
+
 /* MOTTO CONTENT
 -------------------------------------------------- */
 
