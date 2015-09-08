@@ -197,11 +197,12 @@ nav.detached {
 
 	/* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
 	margin-top: 50px;
+	height: inherit;
 }
 
 /* Declare heights because of positioning of img element */
-.carousel .item {
-	height: 300px;
+.carousel .carousel-inner, .carousel .item {
+	height: inherit;
 	overflow: hidden;
 }
 
@@ -209,8 +210,9 @@ nav.detached {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  height: auto;
+  width: auto;
+  max-width: none;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -422,7 +424,7 @@ nav.detached {
 /* Wrapper for page content to push down footer */
 #wrap {
 	min-height: 100%;
-	height: auto;
+	height: 100%;
 	/* Negative indent footer by its height */
 	margin: 0 auto -60px;
 	/* Pad bottom by footer height */
@@ -444,9 +446,18 @@ nav.detached {
 @media (min-width: 480px) {
 
 /* ---------- CAROUSEL -------------------------------------------------- */
-
-	.carousel .item {
+	.carousel {
+		height: auto;
+	}
+	
+	.carousel .carousel-inner, .carousel .item {
 		height: 300px;
+	}
+	
+	.carousel-inner > .item > img {
+
+  		width: 100%;
+		height: auto;
 	}
 	
 	.carousel-caption {
@@ -515,7 +526,7 @@ nav.detached {
 		margin-bottom: 50px;
 	}
 	
-	.carousel .item {
+	.carousel .carousel-inner, .carousel .item {
 		height: 410px;
 	}
 	
@@ -545,7 +556,7 @@ nav.detached {
 
 /* ---------- CAROUSEL -------------------------------------------------- */
 
-	.carousel .item {
+	.carousel .carousel-inner, .carousel .item {
 		height: 500px;
 	}
 	
@@ -564,8 +575,8 @@ nav.detached {
 	
 /* ---------- CAROUSEL -------------------------------------------------- */
 
-	.carousel .item {
-		height: 525px;
+	.carousel .carousel-inner, .carousel .item {
+		height: 550px;
 	}
 	
 	.carousel-caption {
