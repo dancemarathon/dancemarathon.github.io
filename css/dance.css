@@ -290,8 +290,9 @@ nav.detached {
   right: 20%;
 }
 
-.carousel-control:focus, .carousel-control:visited {
+.carousel-control:focus, .carousel-control:visited, .carousel-control:active {
 	opacity: 0.5;
+	filter: alpha(opacity=50);
 }
 
 /* MOTTO CONTENT
