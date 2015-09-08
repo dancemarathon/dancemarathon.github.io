@@ -305,6 +305,11 @@ nav.detached {
 	margin-bottom: 20px;
 }
 
+.motto .img-circle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .motto h1 {
 	font-weight: normal;
 	font-size: 55px;
