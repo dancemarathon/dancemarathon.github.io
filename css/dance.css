@@ -270,12 +270,12 @@ nav.detached {
 }
 /* Fade controls with items */
 .next.left,
-.prev.right img {
+.prev.right {
     opacity: 1;
     z-index: 1;
 }
 .active.left,
-.active.right img {
+.active.right {
     opacity: 0;
     z-index: 2;
 }
